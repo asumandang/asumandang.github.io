@@ -10,7 +10,7 @@
       "executor": "@angular-devkit/build-angular:application",
       "outputs": ["{options.outputPath}"],
       "options": {
-        "outputPath": "dist/asumandang.github.io",
+        "outputPath": "docs",
         "index": "./src/index.html",
         "browser": "./src/main.ts",
         "polyfills": ["zone.js"],
@@ -83,6 +83,12 @@
       "outputs": ["{workspaceRoot}/coverage/{projectName}"],
       "options": {
         "jestConfig": "jest.config.ts"
+      }
+    },
+    "deploy": {
+      "builder": "angular-cli-ghpages:deploy",
+      "options": {
+        "buildTarget": "test:build:production"
       }
     }
   }
