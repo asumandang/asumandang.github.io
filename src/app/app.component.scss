@@ -1,0 +1,19 @@
+.header {
+  text-align: center;
+}
+
+.nav-list {
+  padding: 0.5em 1em;
+  gap: 0.2em;
+  display: flex;
+  list-style: none;
+  justify-content: end;
+
+  > .item:first-child {
+    margin-right: auto;
+  }
+}
+
+.item-link {
+  padding: 0.5em;
+}
